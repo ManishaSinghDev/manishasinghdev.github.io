@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manisha's Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M5JN24W47T"></script>
+
+    <script src="https://kit.fontawesome.com/444c462144.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="images/fontawesome-free-6.7.2-web\css/font-awesome.min.css"> -->
+</head>
+
+<body>
+<div id="header-innerpage">
+    <div class="container">
+        <nav>
+             <img src="logo.png" class="logo"> 
+            <ul id="sidemenu">
+                <li><a href="#header-innerpage">WooCommerce Store</a></li>
+                <li><a href="#website">Website/Landing Pages</a></li>
+                <!-- <li><a href="#services">Services</a></li> -->
+                
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text-innerpage">
+            <h2> Custom WooCommerce Store & Landing Page Development – Kissel & Wolf<span></span></h2>
+            <h2></h2>
+            <div class="wc-content"><h5>This case study highlights the WooCommerce store, core website pages, and dedicated landing pages I developed at Kissel & Wolf.
+            My responsibilities included structured product configuration, variable product setup, payment gateway integration, shipping logic implementation, and checkout flow optimization. The build focused on performance, mobile responsiveness, and conversion-driven layout execution — ensuring a scalable and user-focused eCommerce experience.</h5></div>
+        </div>
+        
+    </div>
+</div>
+
+<!-- WooCommerce Case Study – Premium Layout -->
+<div id="woocommerce">
+  <div class="container">
+  <h2 class="sub-title-innerpage">WooCommerce Store</h2>
+  <br>
+  <p><b>Project Overview: </b></p>
+  &nbsp;
+  <p>In my previous role, I architected and developed a highly customized eCommerce solution using WordPress and WooCommerce, extending core functionality to meet complex business requirements.</p>
+
+<p>The project involved deep customization of WooCommerce templates, hooks, and filters, along with the development of bespoke theme components and reusable modules. I implemented custom product templates, tailored shop queries, advanced filtering logic, and optimized database interactions to support a large catalog of variable products.</p>
+
+<p>On the back end, I extended WooCommerce functionality using PHP, custom post types, and Advanced Custom Fields (ACF), ensuring flexible content management for non-technical stakeholders. On the front end, I developed responsive UI components using modern CSS and JavaScript, focusing on performance optimization, accessibility, and clean code architecture.</p>
+
+<p>Although the company later migrated to a different platform, this project demonstrates my ability to customize WooCommerce at both the application and database levels, maintain code quality standards, and build scalable, maintainable WordPress-based eCommerce systems.</p>
+
+&nbsp;
+<p><b>Objectives:</b></p>
+&nbsp;
+<div class="list">
+<ul>
+<li>Create a responsive, user-friendly eCommerce experience. </li>
+
+<li>Implement a custom Shop Page with advanced filtering and product sorting. </li>
+
+<li>Design intuitive Product Pages highlighting product details, variations, and multimedia content.</li>
+
+<li>Develop a secure Login/My Account experience with custom user workflows.</li>
+
+<li>Ensure scalability for future product expansions and promotions.</li>
+</p>
+</ul>
+</div>
+
+<section class="wc-section fade-in">
+  <div class="wc-container">
+
+    <!-- IMAGE LEFT -->
+    <div class="wc-image">
+      <img src="shop-small.png" alt="Shop Page" onclick="openModal(this.src)">
+    </div>
+
+    <!-- CONTENT RIGHT -->
+    <div class="wc-content">
+      <h2>Shop Page – Product Grid</h2>
+      <p>
+        Designed and structured a conversion-focused WooCommerce shop page
+        optimized for product discovery and mobile usability.
+      </p>
+
+      <ul class="wc-list">
+        <li>Restricted pricing (“Login to View Pricing”) for guest users</li>
+        <li>Custom mobile-first product grid with structured category navigation</li>
+        <li>Conversion-focused banners and CTAs linked to main category pages</li>
+        <li>Advanced filtering and sorting (price, category, applications, custom attributes)</li>
+        <li>Enhanced product display with brand-first titles, variation images, and custom fields</li>
+        <li>Optimized for speed and responsiveness across devices.</li>
+      </ul>
+
+      <button class="view-btn" onclick="openModal('shop-large.png')">
+        View Full Image
+      </button>
+    </div>
+
+  </div>
+</section>
+
+</div>
+
+<section class="wc-section alt fade-in">
+  <div class="wc-container">
+
+    <!-- CONTENT LEFT -->
+    <div class="wc-content">
+      <h2>Product Page – Variable Products</h2>
+
+      <ul class="wc-list">
+        <li>Implemented restricted pricing functionality (“Login to View Pricing”) with role-based price visibility across shop and product pages</li>
+<li>Customized WooCommerce shipping calculator with dynamic messaging and full display of all available shipping methods and pricing</li>
+<li>Developed custom two-column product page layout for improved content structure and usability</li>
+<li>Redesigned and repositioned short product description for better readability and product clarity</li>
+<li>Displayed brand name before product title using taxonomy customization</li>
+<li>Optimized product pages for mobile-responsive UX with improved spacing, layout, and touch interaction</li>
+<li>Integrated enhanced product media including image galleries and embedded videos with performance optimization</li>
+  </ul>
+
+      <button class="view-btn" onclick="openModal('product-small.png')">
+        View Full Image
+      </button>
+    </div>
+
+    <!-- IMAGE RIGHT -->
+    <div class="wc-image">
+      <img src="product-large.png" alt="Product Page" onclick="openModal(this.src)">
+    </div>
+
+  </div>
+</section>
+
+
+<section class="wc-section alt fade-in">
+  <div class="wc-container">
+
+    <!-- CONTENT LEFT -->
+    <div class="wc-content">
+      <h2>Login/Registration Page</h2>
+      <ul class="wc-list">
+        <li>Designed and developed a custom Login & Registration page with both forms displayed on a single page for improved user experience</li>
+        <li>Customized WooCommerce registration form with additional fields and validation logic</li>
+        <li>Implemented user-friendly form layout with clear error handling and success messages</li>
+        <li>Configured secure user authentication and registration workflow integration with WooCommerce</li>
+        <li>Optimized form performance and usability to reduce friction during account creation</li>
+      </ul>
+
+      <button class="view-btn" onclick="openModal('login-large.jpg')">
+        View Full Image
+      </button>
+    </div>
+
+    <!-- IMAGE RIGHT -->
+    <div class="wc-image">
+      <img src="login-small.png" alt="Product Page" onclick="openModal(this.src)">
+    </div>
+
+  </div>
+</section>
+
+<!-- IMAGE MODAL -->
+<div id="imageModal" class="modal" onclick="closeModal()">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImg">
+</div>
+</div>
+</div>
+
+
+<!-- Web Pages -->
+<div id="website">
+  <div class="container">
+<h2 class="sub-title-innerpage">Website / Landing Pages</h2>
+
+  <br>
+  <p><b>Project Overview: </b></p>
+  &nbsp;
+ <p>Developed a full WordPress website including a conversion-focused homepage and a product landing page for Handtop printing machines for an international printing exhibition. The project aimed to improve lead generation, product visibility, and user engagement through interactive marketing design and structured product presentation.</p>
+&nbsp;
+
+<p><b>Challenges:</b></p>
+&nbsp;
+<div class="list">
+<ul>
+<li>Improve user engagement and content discovery on the homepage </li>
+
+<li>Display multiple business offerings in a structured and attractive way </li>
+
+<li>Capture leads effectively using intelligent forms</li>
+
+<li>Develop a secure Login/My Account experience with custom user workflows.</li>
+
+<li>Improve credibility through social proof and multimedia content</li>
+</p>
+</ul>
+</div>
+<br>
+  <p><b>Solution: </b></p>
+  &nbsp;
+ <p>Built interactive, marketing-focused pages combining product presentation, multimedia content, and intelligent lead capture mechanisms to improve user engagement and conversions.</p>
+&nbsp;
+<p><b>Results</b></p>
+&nbsp;
+<div class="list">
+<ul>
+<li>Improved lead generation from exhibition marketing traffic </li>
+
+<li>Enhanced product visibility for international customers </li>
+
+<li>Better user experience through structured product presentation</li>
+
+<li>Increased engagement through multimedia and interactive elements</li>
+
+</p>
+</ul>
+</div>
+<br>
+
+<section class="wc-section fade-in">
+  <div class="wc-container">
+
+    <!-- IMAGE LEFT -->
+    <div class="wc-image">
+      <img src="home.png" alt="Shop Page" onclick="openModal(this.src)">
+    </div>
+
+    <!-- CONTENT RIGHT -->
+    <div class="wc-content">
+      <h2>Home Page Features</h2>
+
+
+      <ul class="wc-list">
+        <li>Auto-sliding brand logo carousel for partner visibility</li>
+        <li>Interactive business categories with expandable descriptions and SEO keywords</li>
+        <li>Embedded business and testimonial YouTube videos</li>
+        <li>Recent blog posts displayed in slider format with CTA buttons</li>
+        <li>Conditional enquiry form with dynamic fields based on enquiry type</li>
+      </ul>
+
+      <button class="view-btn" onclick="openModal('home-large.png')">
+        View Full Image
+      </button>
+    </div>
+
+  </div>
+</section>
+</div>
+
+
+
+<section class="wc-section fade-in">
+  <div class="wc-container">
+
+    <!-- IMAGE LEFT -->
+    <div class="wc-image">
+        <img src="landing-page-small.png" alt="Shop Page" onclick="openModal(this.src)">
+    </div>
+
+    <!-- CONTENT RIGHT -->
+    <div class="wc-content">
+      <h2>Handtop Printing Machine Landing Page</h2>
+  
+
+      <ul class="wc-list">
+        <li>Dedicated product landing page for Handtop printing machine series</li>
+        <li>Displayed all machine models with pricing information</li>
+        <li>Organized product specifications for easy comparison</li>
+        <li>Integrated international exhibition marketing design elements</li>
+        <li>Included strategically placed enquiry forms for lead generation</li>
+        <li>Displayed contact details in a user-friendly and accessible format</li>
+      </ul>
+
+       <button class="view-btn" onclick="openModal('landingpage-large.png')">
+        View Full Image
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<!-- IMAGE MODAL -->
+<div id="imageModal" class="modal" onclick="closeModal()">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImg">
+</div>
+
+</div>
+</div></div>
+
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h2 class="sub-title-innerpage">Contact Me</h2>
+                <p><i class="fas fa-paper-plane"></i> Manisha.hope1@gmail.com</p>
+              <p><i class="fas fa-phone-square-alt" aria-hidden="true"></i> +1 672 472 2733</p>
+                <div class="social-icons">
+                    <a href="linkedin.com/in/manishasingh17"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="Manisha_WordPressDev_CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Manisha 2026 | All rights reserved.</p>
+    </div>
+</div>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzZ4qbLDCdaVqJTeCYYaYgc63g9hnpa6eLlObCjpUAXQHERlyG68CTYpVVQdxLMIEJV/exec' // Google script link 
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
+
+
+<script>
+// Fade-in on scroll
+const faders = document.querySelectorAll('.fade-in');
+
+const appearOptions = {
+  threshold: 0.2
+};
+
+const appearOnScroll = new IntersectionObserver(function(entries, observer){
+  entries.forEach(entry => {
+    if(!entry.isIntersecting) return;
+    entry.target.classList.add('visible');
+    observer.unobserve(entry.target);
+  });
+}, appearOptions);
+
+faders.forEach(fader => {
+  appearOnScroll.observe(fader);
+});
+
+// Modal
+function openModal(src) {
+  document.getElementById("imageModal").style.display = "block";
+  document.getElementById("modalImg").src = src;
+}
+
+function closeModal() {
+  document.getElementById("imageModal").style.display = "none";
+}
+</script>
